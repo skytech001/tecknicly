@@ -10211,6 +10211,10 @@ Page Title
 .benefit-block h5 {
   color: #ffffff;
 }
+.benefit-block p {
+  color: #ffffff;
+  opacity: 0.6;
+}
 .myfaq {
   padding-top: 0;
 }
