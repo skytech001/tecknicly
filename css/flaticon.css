@@ -34,29 +34,8 @@ i[class*=" flaticon-"]:before {
 .flaticon-diplomat:before {
     content: "\f105";
 }
-.flaticon-teaching:before {
-    content: "\f106";
-}
-.flaticon-laptop:before {
-    content: "\f107";
-}
-.flaticon-health-check:before {
-    content: "\f108";
-}
-.flaticon-bank:before {
-    content: "\f109";
-}
-.flaticon-success:before {
-    content: "\f10a";
-}
 .flaticon-recommend:before {
     content: "\f10b";
-}
-.flaticon-marketing:before {
-    content: "\f10c";
-}
-.flaticon-job-promotion:before {
-    content: "\f10d";
 }
 .flaticon-completed-task:before {
     content: "\f10e";
@@ -69,24 +48,6 @@ i[class*=" flaticon-"]:before {
 }
 .flaticon-group:before {
     content: "\f111";
-}
-.flaticon-learning:before {
-    content: "\f112";
-}
-.flaticon-cloud:before {
-    content: "\f113";
-}
-.flaticon-digital-services:before {
-    content: "\f114";
-}
-.flaticon-graphic-design:before {
-    content: "\f115";
-}
-.flaticon-technology:before {
-    content: "\f116";
-}
-.flaticon-phone-call:before {
-    content: "\f117";
 }
 .flaticon-visitor:before {
     content: "\f118";
