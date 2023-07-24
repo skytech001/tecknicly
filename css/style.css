@@ -1,5 +1,5 @@
-/* 
 
+/* 
 Template Name: Desix
 Version: 1.0.0
 License: copyright commercial
@@ -653,25 +653,24 @@ Scroll To Top style
 }
 
 .bg-pattern-1 {
-  background-image: url(../images/icons/pattern-1.jpg);
+  background-image: url(../images/icons/pattern-1.avif);
 }
 
 .bg-pattern-3 {
-  background-image: url(../images/icons/pattern-3.jpg);
+  background-image: url(../images/icons/pattern-3.avif);
 }
 
 .bg-pattern-5 {
-  background-image: url(../images/icons/pattern-5.jpg);
+  background-image: url(../images/icons/pattern-5.avif);
 }
 
 .bg-pattern-6 {
-  background-image: url(../images/icons/pattern-6.jpg);
+  background-image: url(../images/icons/pattern-6.avif);
 }
 
 .bg-pattern-7 {
-  background-image: url(../images/icons/pattern-7.jpg);
+  background-image: url(../images/icons/pattern-7.avif);
 }
-
 /*======================
     Tabs Box
 ======================*/
@@ -1407,7 +1406,11 @@ Sticky Header
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
-
+.sticky-header.fixed-header {
+  opacity: 1;
+  z-index: 9999;
+  visibility: visible;
+}
 .sticky-header .logo {
   padding: 10px 0;
 }
@@ -1446,7 +1449,8 @@ Sticky Header
   color: var(--theme-color2);
 }
 
-.sticky-header .outer-box {
+.sticky-header .outer-box,
+.sticky-header .navbar-header{
   display: none;
 }
 
@@ -1575,7 +1579,40 @@ Sticky Header
   -webkit-transform: translateX(101%);
           transform: translateX(101%);
 }
+.mobile-menu-visible {
+  overflow: hidden;
+}
 
+.mobile-menu-visible .mobile-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu-visible .mobile-menu .menu-backdrop {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.mobile-menu-visible .mobile-menu .menu-box {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.4s ease 200ms;
+  transition: all 0.4s ease 200ms;
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+.mobile-menu-visible .mobile-menu .close-btn {
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+.mobile-menu-visible .scroll-to-top {
+  opacity: 0;
+  visibility: hidden;
+}
 .mobile-menu .navigation {
   position: relative;
   display: block;
@@ -1606,7 +1643,33 @@ Sticky Header
 .mobile-menu .navigation li:hover > a, .mobile-menu .navigation li.current > a {
   color: #ffffff;
 }
+.mobile-menu .navigation li.dropdown .dropdown-btn {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 44px;
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 5;
+}
 
+.mobile-menu .navigation li.dropdown .dropdown-btn:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  width: 1px;
+  height: 24px;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-menu .navigation li.dropdown .dropdown-btn.active i:before {
+  content: "\f106";
+}
 .mobile-menu .navigation li > ul,
 .mobile-menu .navigation li > ul > li > ul {
   display: none;
@@ -2067,7 +2130,7 @@ Section Title
   bottom: 0;
   height: 100%;
   width: 35%;
-  background-image: url(../images/icons/gradient.jpg);
+  background-image: url(../images/icons/gradient.avif);
   content: "";
 }
 .about-section .content-column {
@@ -2324,6 +2387,7 @@ Section Title
   right: 0;
   top: 140px;
   background-image: url(../images/icons/shape1.png);
+  z-index: -10;
 }
 .services-section .sec-title {
   margin-bottom: 45px;
@@ -3911,7 +3975,8 @@ Page Title
   border-radius: 5px;
   text-align: center;
   border: 1px solid var(--theme-color-dark);
-  border-top: 5px solid var(--theme-color1)
+  border-top: 5px solid var(--theme-color1);
+ 
 }
 .seo-icon {
   width: 8rem
@@ -3928,7 +3993,7 @@ Page Title
 }
 
 .calltoaction {
-  background-image: url("/images/icons/pattern-10.jpg");
+  background-image: url("/images/icons/pattern-10.avif");
   text-align: center;
   padding: 20px;
   color: var(--theme-service-block-background)
