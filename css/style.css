@@ -40,7 +40,7 @@ License: copyright commercial
 @import url("fontawesome.css");
 @import url("flaticon.css");
 @import url("tm-bs-mp.css");
-@import url("tm-utility-classes.css");
+
 :root {
   --theme-color-service-block: #ffffff;
   --theme-color-dark: #18191c;
