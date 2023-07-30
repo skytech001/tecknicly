@@ -44,7 +44,7 @@ License: copyright commercial
 :root {
   --theme-color-service-block: #ffffff;
   --theme-color-dark: #18191c;
-  --theme-color1: #fec63f;
+  --theme-color1: blue;
   --bg-theme-color1: var(--theme-color1);
   --theme-color2: #18191c;
   --bg-theme-color2: var(--theme-color2);
